@@ -16,7 +16,7 @@ namespace EmpleadosEmpresa
         List<SueldoMensual> sueldos = new List<SueldoMensual>();
 
         string archivoEmpleados = @"../../../empleados.json";
-        string archivoHoras = @"../../horas.json";
+        string archivoHoras = @"../../../horas.json";
 
         public Form1()
         {
@@ -55,12 +55,12 @@ namespace EmpleadosEmpresa
 
         private void buttonAñadir_Click(object sender, EventArgs e)
         {
-            int noEmpleado = int.Parse(textBoxNoEmpleado.Text);
-            string nombre = textBoxNombre.Text;
-            double sueldoPorHora = double.Parse(textBoxSueldo.Text);
-
             if (textBoxNombre.Text != "" && textBoxNoEmpleado.Text != "" && textBoxSueldo.Text != "")
             {
+                int noEmpleado = int.Parse(textBoxNoEmpleado.Text);
+                string nombre = textBoxNombre.Text;
+                double sueldoPorHora = double.Parse(textBoxSueldo.Text);
+
                 Empleado empleado = new Empleado();
                 empleado.nombreEmpleado = nombre;
                 empleado.noEmpleado = noEmpleado;
@@ -90,6 +90,12 @@ namespace EmpleadosEmpresa
         private void buttonCargar_Click(object sender, EventArgs e)
         {
             CargarEmpleadosEnGrid();
+        }
+
+        private void buttonAsistencia_Click(object sender, EventArgs e)
+        {
+            Asistencia formAsistencia = new Asistencia();
+            formAsistencia.Show();
         }
     }
 }
