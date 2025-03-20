@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
+            dataGridViewEmpleados = new DataGridView();
             label1 = new Label();
             label2 = new Label();
             comboBox1 = new ComboBox();
@@ -39,16 +39,17 @@
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            buttonCargar = new Button();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewEmpleados).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // dataGridViewEmpleados
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(467, 98);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(287, 254);
-            dataGridView1.TabIndex = 0;
+            dataGridViewEmpleados.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewEmpleados.Location = new Point(410, 98);
+            dataGridViewEmpleados.Name = "dataGridViewEmpleados";
+            dataGridViewEmpleados.Size = new Size(344, 254);
+            dataGridViewEmpleados.TabIndex = 0;
             // 
             // label1
             // 
@@ -84,6 +85,7 @@
             buttonAñadir.TabIndex = 4;
             buttonAñadir.Text = "Añadir";
             buttonAñadir.UseVisualStyleBackColor = true;
+            buttonAñadir.Click += buttonAñadir_Click;
             // 
             // textBoxNombre
             // 
@@ -133,11 +135,22 @@
             label5.TabIndex = 10;
             label5.Text = "Sueldo por hora:";
             // 
+            // buttonCargar
+            // 
+            buttonCargar.Location = new Point(596, 54);
+            buttonCargar.Name = "buttonCargar";
+            buttonCargar.Size = new Size(116, 23);
+            buttonCargar.TabIndex = 11;
+            buttonCargar.Text = "Cargar Empleados";
+            buttonCargar.UseVisualStyleBackColor = true;
+            buttonCargar.Click += buttonCargar_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(buttonCargar);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -148,18 +161,18 @@
             Controls.Add(comboBox1);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(dataGridView1);
+            Controls.Add(dataGridViewEmpleados);
             Name = "Form1";
             Text = "Empleados";
             Load += Form1_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewEmpleados).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView dataGridViewEmpleados;
         private Label label1;
         private Label label2;
         private ComboBox comboBox1;
@@ -170,5 +183,6 @@
         private Label label3;
         private Label label4;
         private Label label5;
+        private Button buttonCargar;
     }
 }
