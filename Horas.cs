@@ -10,6 +10,6 @@ namespace EmpleadosEmpresa
     {
         public int NoEmpleado { get; set; }
         public int HorasMes { get; set; }
-        public string? Mes { get; set; }
+        public int Mes { get; set; }
     }
 }

@@ -10,6 +10,6 @@ namespace EmpleadosEmpresa
     {
         public string? Nombre { get; set; }
         public string? Mes { get; set; }
-        public decimal Sueldo { get; set; }
+        public double Sueldo { get; set; }
     }
 }
