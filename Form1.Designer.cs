@@ -41,6 +41,7 @@
             buttonAsistencia = new Button();
             textBoxNoEmpleado = new NumericUpDown();
             textBoxSueldo = new TextBox();
+            buttonReporte = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewEmpleados).BeginInit();
             ((System.ComponentModel.ISupportInitialize)textBoxNoEmpleado).BeginInit();
             SuspendLayout();
@@ -48,46 +49,43 @@
             // dataGridViewEmpleados
             // 
             dataGridViewEmpleados.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewEmpleados.Location = new Point(469, 131);
-            dataGridViewEmpleados.Margin = new Padding(3, 4, 3, 4);
+            dataGridViewEmpleados.Location = new Point(410, 98);
             dataGridViewEmpleados.Name = "dataGridViewEmpleados";
             dataGridViewEmpleados.RowHeadersWidth = 51;
-            dataGridViewEmpleados.Size = new Size(424, 339);
+            dataGridViewEmpleados.Size = new Size(371, 254);
             dataGridViewEmpleados.TabIndex = 0;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(534, 49);
+            label1.Location = new Point(467, 37);
             label1.Name = "label1";
-            label1.Size = new Size(157, 20);
+            label1.Size = new Size(123, 15);
             label1.TabIndex = 1;
             label1.Text = "Sueldo de Empleados:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(71, 73);
+            label2.Location = new Point(62, 55);
             label2.Name = "label2";
-            label2.Size = new Size(128, 20);
+            label2.Size = new Size(101, 15);
             label2.TabIndex = 2;
             label2.Text = "Añadir empleado:";
             // 
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(536, 73);
-            comboBox1.Margin = new Padding(3, 4, 3, 4);
+            comboBox1.Location = new Point(469, 55);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(138, 28);
+            comboBox1.Size = new Size(121, 23);
             comboBox1.TabIndex = 3;
             // 
             // buttonAñadir
             // 
-            buttonAñadir.Location = new Point(193, 343);
-            buttonAñadir.Margin = new Padding(3, 4, 3, 4);
+            buttonAñadir.Location = new Point(169, 257);
             buttonAñadir.Name = "buttonAñadir";
-            buttonAñadir.Size = new Size(86, 31);
+            buttonAñadir.Size = new Size(75, 42);
             buttonAñadir.TabIndex = 4;
             buttonAñadir.Text = "Añadir";
             buttonAñadir.UseVisualStyleBackColor = true;
@@ -95,45 +93,43 @@
             // 
             // textBoxNombre
             // 
-            textBoxNombre.Location = new Point(72, 144);
-            textBoxNombre.Margin = new Padding(3, 4, 3, 4);
+            textBoxNombre.Location = new Point(63, 108);
             textBoxNombre.Name = "textBoxNombre";
-            textBoxNombre.Size = new Size(206, 27);
+            textBoxNombre.Size = new Size(181, 23);
             textBoxNombre.TabIndex = 5;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(72, 120);
+            label3.Location = new Point(63, 90);
             label3.Name = "label3";
-            label3.Size = new Size(67, 20);
+            label3.Size = new Size(54, 15);
             label3.TabIndex = 8;
             label3.Text = "Nombre:";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(72, 189);
+            label4.Location = new Point(63, 142);
             label4.Name = "label4";
-            label4.Size = new Size(107, 20);
+            label4.Size = new Size(85, 15);
             label4.TabIndex = 9;
             label4.Text = "No. Empleado:";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(72, 256);
+            label5.Location = new Point(63, 192);
             label5.Name = "label5";
-            label5.Size = new Size(119, 20);
+            label5.Size = new Size(94, 15);
             label5.TabIndex = 10;
             label5.Text = "Sueldo por hora:";
             // 
             // buttonCargar
             // 
-            buttonCargar.Location = new Point(681, 72);
-            buttonCargar.Margin = new Padding(3, 4, 3, 4);
+            buttonCargar.Location = new Point(596, 54);
             buttonCargar.Name = "buttonCargar";
-            buttonCargar.Size = new Size(133, 31);
+            buttonCargar.Size = new Size(116, 23);
             buttonCargar.TabIndex = 11;
             buttonCargar.Text = "Cargar Empleados";
             buttonCargar.UseVisualStyleBackColor = true;
@@ -141,9 +137,10 @@
             // 
             // buttonAsistencia
             // 
-            buttonAsistencia.Location = new Point(285, 343);
+            buttonAsistencia.Location = new Point(306, 368);
+            buttonAsistencia.Margin = new Padding(3, 2, 3, 2);
             buttonAsistencia.Name = "buttonAsistencia";
-            buttonAsistencia.Size = new Size(94, 56);
+            buttonAsistencia.Size = new Size(82, 42);
             buttonAsistencia.TabIndex = 12;
             buttonAsistencia.Text = "Ingresar Asistencia";
             buttonAsistencia.UseVisualStyleBackColor = true;
@@ -151,24 +148,35 @@
             // 
             // textBoxNoEmpleado
             // 
-            textBoxNoEmpleado.Location = new Point(72, 212);
+            textBoxNoEmpleado.Location = new Point(63, 159);
+            textBoxNoEmpleado.Margin = new Padding(3, 2, 3, 2);
             textBoxNoEmpleado.Name = "textBoxNoEmpleado";
-            textBoxNoEmpleado.Size = new Size(205, 27);
+            textBoxNoEmpleado.Size = new Size(179, 23);
             textBoxNoEmpleado.TabIndex = 13;
             // 
             // textBoxSueldo
             // 
-            textBoxSueldo.Location = new Point(70, 280);
-            textBoxSueldo.Margin = new Padding(3, 4, 3, 4);
+            textBoxSueldo.Location = new Point(61, 210);
             textBoxSueldo.Name = "textBoxSueldo";
-            textBoxSueldo.Size = new Size(207, 27);
+            textBoxSueldo.Size = new Size(182, 23);
             textBoxSueldo.TabIndex = 7;
+            // 
+            // buttonReporte
+            // 
+            buttonReporte.Location = new Point(225, 368);
+            buttonReporte.Name = "buttonReporte";
+            buttonReporte.Size = new Size(75, 42);
+            buttonReporte.TabIndex = 14;
+            buttonReporte.Text = "Reporte";
+            buttonReporte.UseVisualStyleBackColor = true;
+            buttonReporte.Click += buttonReporte_Click;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
+            ClientSize = new Size(800, 450);
+            Controls.Add(buttonReporte);
             Controls.Add(textBoxNoEmpleado);
             Controls.Add(buttonAsistencia);
             Controls.Add(buttonCargar);
@@ -182,7 +190,6 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(dataGridViewEmpleados);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Empleados";
@@ -209,6 +216,6 @@
         private Button buttonAsistencia;
         private NumericUpDown textBoxNoEmpleado;
         private TextBox textBoxSueldo;
-        
+        private Button buttonReporte;
     }
 }

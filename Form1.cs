@@ -10,6 +10,7 @@ namespace EmpleadosEmpresa
 {
     public partial class Form1 : Form
     {
+        MetodosJson metodosJson = new MetodosJson();
         //Listas
         List<Empleado> empleados = new List<Empleado>();
         List<Horas> horasTrabajadas = new List<Horas>();
@@ -23,34 +24,19 @@ namespace EmpleadosEmpresa
             InitializeComponent();
         }
 
-        //Metodos
-        private void GuardarEmpleado(string fileName)
-        {
-            //Serializar (convierte a Json)
-            string json = JsonConvert.SerializeObject(empleados);
-            System.IO.File.WriteAllText(fileName, json);
-        }
-
-        private void LeerJson(string fileName)
-        {
-            StreamReader jsonStream = File.OpenText(fileName);
-            string json = jsonStream.ReadToEnd();
-            jsonStream.Close();
-
-            //Se deserializa (convierte) la cadena json
-            //y la convierte a la lista a donde se van a cargar los datos
-            empleados = JsonConvert.DeserializeObject<List<Empleado>>(json) ?? new List<Empleado>();
-        }
-
         private void CargarEmpleadosEnGrid()
         {
+            MetodosJson cargarEmpleado = new MetodosJson();
+            empleados = cargarEmpleado.LeerJson(archivoEmpleados);
+
             dataGridViewEmpleados.DataSource = null;
             dataGridViewEmpleados.DataSource = empleados;
+            dataGridViewEmpleados.Refresh();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            LeerJson(archivoEmpleados);
+            metodosJson.LeerJson(archivoEmpleados);
         }
 
         private void buttonAñadir_Click(object sender, EventArgs e)
@@ -68,7 +54,7 @@ namespace EmpleadosEmpresa
 
                 empleados.Add(empleado);
 
-                GuardarEmpleado(archivoEmpleados);
+                metodosJson.GuardarJson(archivoEmpleados, empleados);
                 Limpiar();
                 MessageBox.Show("Empleado añadido exitosamente");
             }
@@ -96,6 +82,12 @@ namespace EmpleadosEmpresa
         {
             Asistencia formAsistencia = new Asistencia();
             formAsistencia.Show();
+        }
+
+        private void buttonReporte_Click(object sender, EventArgs e)
+        {
+            FormReporte formReporte = new FormReporte();
+            formReporte.Show();
         }
     }
 }
