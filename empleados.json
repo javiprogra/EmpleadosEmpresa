@@ -1,1 +1,12 @@
-[{"noEmpleado":1,"nombreEmpleado":"javier","sueldoPorHora":30.0}]
+[
+  {
+    "noEmpleado": 2,
+    "nombreEmpleado": "guicho",
+    "sueldoPorHora": 45.0
+  },
+  {
+    "noEmpleado": 3,
+    "nombreEmpleado": "javier",
+    "sueldoPorHora": 30.0
+  }
+]

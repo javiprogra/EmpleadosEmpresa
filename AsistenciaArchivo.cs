@@ -22,7 +22,7 @@ namespace EmpleadosEmpresa
             string json = jsonStream.ReadToEnd();
             jsonStream.Close();
 
-            lista = JsonConvert.DeserializeObject<List<Horas>>(json);
+            lista = JsonConvert.DeserializeObject<List<Horas>>(json) ?? new List<Horas>();
             return lista;
         }
     }

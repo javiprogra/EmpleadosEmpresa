@@ -40,10 +40,9 @@
             // 
             // buttonClose
             // 
-            buttonClose.Location = new Point(518, 342);
-            buttonClose.Margin = new Padding(3, 2, 3, 2);
+            buttonClose.Location = new Point(592, 456);
             buttonClose.Name = "buttonClose";
-            buttonClose.Size = new Size(82, 45);
+            buttonClose.Size = new Size(94, 60);
             buttonClose.TabIndex = 0;
             buttonClose.Text = "Cerrar";
             buttonClose.UseVisualStyleBackColor = true;
@@ -52,57 +51,61 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(99, 89);
+            label1.Location = new Point(113, 119);
             label1.Name = "label1";
-            label1.Size = new Size(85, 15);
+            label1.Size = new Size(107, 20);
             label1.TabIndex = 1;
             label1.Text = "No. Empleado:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(90, 144);
+            label2.Location = new Point(103, 192);
             label2.Name = "label2";
-            label2.Size = new Size(94, 15);
+            label2.Size = new Size(118, 20);
             label2.TabIndex = 2;
             label2.Text = "Horas en el mes:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(152, 192);
+            label3.Location = new Point(174, 256);
             label3.Name = "label3";
-            label3.Size = new Size(32, 15);
+            label3.Size = new Size(39, 20);
             label3.TabIndex = 3;
             label3.Text = "Mes:";
             // 
             // comboBoxEmpleado
             // 
             comboBoxEmpleado.FormattingEnabled = true;
-            comboBoxEmpleado.Location = new Point(190, 86);
+            comboBoxEmpleado.Location = new Point(227, 116);
+            comboBoxEmpleado.Margin = new Padding(3, 4, 3, 4);
             comboBoxEmpleado.Name = "comboBoxEmpleado";
-            comboBoxEmpleado.Size = new Size(157, 23);
+            comboBoxEmpleado.Size = new Size(179, 28);
             comboBoxEmpleado.TabIndex = 4;
             // 
             // textBoxHorasMes
             // 
-            textBoxHorasMes.Location = new Point(190, 141);
+            textBoxHorasMes.Location = new Point(227, 189);
+            textBoxHorasMes.Margin = new Padding(3, 4, 3, 4);
             textBoxHorasMes.Name = "textBoxHorasMes";
-            textBoxHorasMes.Size = new Size(100, 23);
+            textBoxHorasMes.Size = new Size(114, 27);
             textBoxHorasMes.TabIndex = 5;
             // 
             // textBoxMes
             // 
-            textBoxMes.Location = new Point(190, 189);
+            textBoxMes.Location = new Point(227, 253);
+            textBoxMes.Margin = new Padding(3, 4, 3, 4);
             textBoxMes.Name = "textBoxMes";
-            textBoxMes.Size = new Size(100, 23);
+            textBoxMes.Size = new Size(114, 27);
             textBoxMes.TabIndex = 6;
             // 
             // buttonGuardarAsistencia
             // 
-            buttonGuardarAsistencia.Location = new Point(190, 238);
+            buttonGuardarAsistencia.Location = new Point(217, 317);
+            buttonGuardarAsistencia.Margin = new Padding(3, 4, 3, 4);
             buttonGuardarAsistencia.Name = "buttonGuardarAsistencia";
-            buttonGuardarAsistencia.Size = new Size(95, 45);
+            buttonGuardarAsistencia.Size = new Size(109, 60);
             buttonGuardarAsistencia.TabIndex = 7;
             buttonGuardarAsistencia.Text = "Guardar";
             buttonGuardarAsistencia.UseVisualStyleBackColor = true;
@@ -110,9 +113,9 @@
             // 
             // Asistencia
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(612, 398);
+            ClientSize = new Size(699, 531);
             Controls.Add(buttonGuardarAsistencia);
             Controls.Add(textBoxMes);
             Controls.Add(textBoxHorasMes);
@@ -121,7 +124,6 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(buttonClose);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Asistencia";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Asistencia";

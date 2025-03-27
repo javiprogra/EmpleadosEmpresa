@@ -28,27 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
+            dataGridViewReporte = new DataGridView();
             buttonMostrar = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewReporte).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // dataGridViewReporte
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(15, 10);
-            dataGridView1.Margin = new Padding(3, 2, 3, 2);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(675, 240);
-            dataGridView1.TabIndex = 0;
+            dataGridViewReporte.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewReporte.Location = new Point(17, 13);
+            dataGridViewReporte.Name = "dataGridViewReporte";
+            dataGridViewReporte.RowHeadersWidth = 51;
+            dataGridViewReporte.Size = new Size(771, 320);
+            dataGridViewReporte.TabIndex = 0;
             // 
             // buttonMostrar
             // 
-            buttonMostrar.Location = new Point(256, 255);
-            buttonMostrar.Margin = new Padding(3, 2, 3, 2);
+            buttonMostrar.Location = new Point(293, 340);
             buttonMostrar.Name = "buttonMostrar";
-            buttonMostrar.Size = new Size(154, 51);
+            buttonMostrar.Size = new Size(176, 68);
             buttonMostrar.TabIndex = 1;
             buttonMostrar.Text = "Mostrar Reporte";
             buttonMostrar.UseVisualStyleBackColor = true;
@@ -56,23 +54,22 @@
             // 
             // FormReporte
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(700, 338);
+            ClientSize = new Size(800, 451);
             Controls.Add(buttonMostrar);
-            Controls.Add(dataGridView1);
-            Margin = new Padding(3, 2, 3, 2);
+            Controls.Add(dataGridViewReporte);
             Name = "FormReporte";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormReporte";
             Load += FormReporte_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewReporte).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView dataGridViewReporte;
         private Button buttonMostrar;
     }
 }
